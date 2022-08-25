@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأجندة القضائية</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css//bootstrap.min.css"/>
+    <!-- normalize -->
+    <link rel="stylesheet" href="./css/normalize.css"/>
+    <!-- all-min -->
+    <link rel="stylesheet" href="./css/all.min.css"/>
+    <!-- main css -->
+    <link rel="stylesheet" href="./css//index.css"/>
+    <!-- the main font that used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="container">
+            <h1>الأجندة القضائية</h1>
+            <div class="header-container">
+                <div class="case-number">
+                    <label for="case-number">رقم القضية</label>
+                    <input id="case-number" type="text" placeholder="رقم القضية">
+                </div>
+                <div class="client-name">
+                    <label for="client-name">إسم الموكل</label>
+                    <input id="client-name" type="text" placeholder="إسم الموكل">
+                </div>
+                <div class="against">
+                    <label for="against">ضــــــــد</label>
+                    <input id="against" type="text" placeholder="ضــــــــد">
+                </div>
+                <div class="from-session">
+                    <label for="from-session">من جلسة</label>
+                    <input id="from-session" type="date" placeholder="من جلسة">
+                </div>
+                <div class="to-session">
+                    <label for="to-session">إلى جلسة</label>
+                    <input id="to-session" type="date" placeholder="إلى جلسة">
+                </div>
+                <div class="case-type">
+                    <label for="case-type">نوع الدعوى</label>
+                    <input id="case-type" type="text" placeholder="نوع الدعوى">
+                </div>
+
+                <div class="header-buttons w-25">
+                    <button class="btn btn-primary my-1 button create">إنشاء</button>
+                    <button class="btn btn-primary my-1 button remove-all">حذف</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <div class="the-body">
+        <section class="container pb-5">
+            <table class="main-table">
+                <thead>
+                    <tr>
+                        <td>رقم القضية</td>
+                        <td>إسم الموكل</td>
+                        <td>ضــــــــد</td>
+                        <td>من جلسة</td>
+                        <td>إلى جلسة</td>
+                        <td>نوع الدعوى</td>
+                        <td>تعديل \ حذف</td>
+                    </tr>
+                </thead>
+                <tbody class="tbody"></tbody>
+            </table>
+        </section>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>

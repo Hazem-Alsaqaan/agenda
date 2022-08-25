@@ -1,0 +1,114 @@
+/* start global */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    direction: rtl;
+    font-family: 'Noto Sans Arabic', sans-serif;
+    margin: 0px;
+    background-color: #eee;
+}
+:root{
+    --text-color: #171f45;
+}
+/* end global */
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-container {
+    background-color: white;
+    padding: 25px 0px;
+    margin: 25px 0px;
+}
+.header-container div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.header-container div label {
+    color: #003b9b;
+    font-weight: 700;
+    margin: 5px 0px;
+}
+.header-container div input {
+    border: 2px solid #eee;
+    background-color: white;
+    border-radius: 5px 5px;
+    padding: 5px 3px;
+    transition-duration: .8s;
+}
+.header-container div input::placeholder {
+    color: #ccc;
+}
+.header-container div input:focus {
+    outline: none;
+    border: 2px solid #003b9b;
+}
+/* end header */
+/* start tabel */
+.the-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+table {
+    width: 100%;
+    background-color: #eee;
+}
+
+thead tr {
+    background-color: #ccc;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+    text-align: center;
+    padding: 5px 0px;
+    color: #003b9b;
+}
+thead tr td {
+    background-color: #eee;
+    padding: 10px 0px;
+    font-weight: 700;
+}
+
+tbody tr {
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+    padding: 5px 0px;
+}
+tbody td {
+    background-color: white;
+    text-align: center;
+    font-weight: 300;
+    color: var(--main-blue);
+    padding: 5px;
+    font-weight: 700;
+}
+/* end tabel */
+
+/* start media */
+@media (max-width: 571px){
+    thead tr td,
+    tbody td {
+        font-size: 12px;
+    }
+    button.edit,
+    button.delete {
+        padding: 0px 5px;
+        font-size: 12px;
+    }
+}
+
+/* end media */
